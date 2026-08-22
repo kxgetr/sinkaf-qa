@@ -1,0 +1,18 @@
+# Sinkaf QA
+
+> Açık kaynak otonom yapay zeka web QA ajanı.
+
+Sinkaf QA, web sitelerini gerçek bir Chromium browser kullanarak test eder, LLM vizyon ve DOM yetenekleri ile şüpheli davranışları tespit eder ve bunu yaparken kanıt arar (screenshot, console, network traces).
+
+## Ürün İlkeleri (Product Principles)
+- **Kanıta Dayalı Karar:** Bug reproduce edilemezse onaylanmaz.
+- **BYOK (Bring Your Own Key):** Kendi API anahtarınızı (Gemini) kullanırsınız.
+- **Açık Kaynak (MIT):** Kurumsal kilitleme yoktur.
+- **Güvenli (Isolated):** Kimlik doğrulama testleri sır sızdırmaz, izole çalışır.
+
+## Dokümantasyon
+- [Mimarimiz](https://sinkaf.com.tr/docs/architecture)
+- [Güvenlik Modeli](https://sinkaf.com.tr/docs/security)
+
+## GitHub Reposu
+[https://github.com/sinkaf-qa/sinkaf](https://github.com/sinkaf-qa/sinkaf)

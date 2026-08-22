@@ -1,0 +1,18 @@
+{
+  "profiles": [
+    {
+      "id": "demo-user",
+      "name": "Demo Test User",
+      "hostname": "preview.example.com",
+      "loginUrl": "https://preview.example.com/login",
+      "method": "form",
+      "usernameSecretRef": "SINKAF_AUTH_DEMO_EMAIL",
+      "passwordSecretRef": "SINKAF_AUTH_DEMO_PASSWORD",
+      "usernameFieldHints": ["email", "e-mail", "username"],
+      "passwordFieldHints": ["password", "şifre"],
+      "submitButtonHints": ["login", "sign in", "giriş yap"],
+      "successUrlPattern": "/dashboard",
+      "enabled": true
+    }
+  ]
+}

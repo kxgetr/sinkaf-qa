@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1787435904055,
+      "tag": "0000_wild_roughhouse",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1787436157551,
+      "tag": "0001_thick_firestar",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1787437563663,
+      "tag": "0002_new_barracuda",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1787437836011,
+      "tag": "0003_curvy_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1787438461516,
+      "tag": "0004_nappy_shocker",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1787439101575,
+      "tag": "0005_naive_blue_marvel",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1787439660340,
+      "tag": "0006_shocking_franklin_richards",
+      "breakpoints": true
+    }
+  ]
+}

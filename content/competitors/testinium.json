@@ -1,0 +1,14 @@
+{
+  "slug": "testinium",
+  "name": "Testinium",
+  "category": "End-to-End QA Ecosystem",
+  "officialUrl": "https://testinium.com",
+  "verifiedAt": "2026-08-23T00:00:00Z",
+  "sources": ["https://testinium.com"],
+  "verifiedFacts": [
+    { "feature": "Open Source", "value": false, "source": "official" },
+    { "feature": "Self Hosted", "value": false, "source": "official" },
+    { "feature": "Managed Service", "value": true, "source": "official" },
+    { "feature": "Enterprise Reporting", "value": true, "source": "official" }
+  ]
+}

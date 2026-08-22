@@ -1,0 +1,30 @@
+name: Sinkaf QA (Preview)
+
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+
+concurrency:
+  group: sinkaf-${{ github.repository }}-${{ github.event.deployment.environment }}
+  cancel-in-progress: true
+
+jobs:
+  sinkaf-qa:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment != 'Production'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Sinkaf QA
+        uses: ./.github/actions/sinkaf-qa
+        with:
+          sinkaf-url: ${{ secrets.SINKAF_QA_URL }}
+          sinkaf-token: ${{ secrets.SINKAF_QA_TOKEN }}
+          preview-url: ${{ github.event.deployment_status.environment_url }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}

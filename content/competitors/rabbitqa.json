@@ -1,0 +1,14 @@
+{
+  "slug": "rabbitqa",
+  "name": "RabbitQA",
+  "category": "Multi-agentic AI Platform",
+  "officialUrl": "https://rabbitqa.com",
+  "verifiedAt": "2026-08-23T00:00:00Z",
+  "sources": ["https://rabbitqa.com"],
+  "verifiedFacts": [
+    { "feature": "Open Source", "value": false, "source": "official" },
+    { "feature": "Self Hosted", "value": false, "source": "official" },
+    { "feature": "Multi-agent AI", "value": true, "source": "official" },
+    { "feature": "Digital Quality Platform", "value": true, "source": "official" }
+  ]
+}

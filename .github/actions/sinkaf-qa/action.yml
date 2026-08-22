@@ -1,0 +1,26 @@
+name: "Sinkaf QA"
+description: "Run exploratory QA tests using Sinkaf"
+
+inputs:
+  sinkaf-url:
+    description: "URL of your Sinkaf QA instance"
+    required: true
+  sinkaf-token:
+    description: "SINKAF_TRIGGER_TOKEN"
+    required: true
+  preview-url:
+    description: "Target URL to test"
+    required: true
+  baseline-url:
+    description: "Baseline URL for regression testing"
+    required: false
+  goal:
+    description: "Test objective"
+    required: false
+  github-token:
+    description: "GitHub Token for posting comments"
+    required: true
+
+runs:
+  using: "node20"
+  main: "src/main.js"

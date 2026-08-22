@@ -2,8 +2,8 @@ FROM mcr.microsoft.com/playwright:v1.49.1-noble
 
 WORKDIR /app
 
-RUN corepack enable \
-    && corepack prepare pnpm@11.22.0 --activate
+RUN npm install --global pnpm@11.22.0 \
+    && pnpm --version
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY apps/worker/package.json ./apps/worker/package.json

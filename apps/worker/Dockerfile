@@ -2,16 +2,19 @@ FROM mcr.microsoft.com/playwright:v1.49.1-noble
 
 WORKDIR /app
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable \
+    && corepack prepare pnpm@11.22.0 --activate
 
-COPY pnpm-workspace.yaml package.json ./
-COPY apps/worker/package.json apps/worker/package.json
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY apps/worker/package.json ./apps/worker/package.json
 
-RUN pnpm install --filter worker...
+RUN pnpm install --frozen-lockfile --filter worker...
 
-COPY apps/worker apps/worker
+COPY apps/worker ./apps/worker
 
 RUN pnpm --filter worker build
+
+ENV PORT=8080
 
 EXPOSE 8080
 

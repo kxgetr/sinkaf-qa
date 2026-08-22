@@ -43,7 +43,7 @@ yarn-error.log*
 next-env.d.ts
 
 # security & runtime
-artifacts/
+/artifacts/
 auth-state/
 playwright/.auth/
 *.auth.json

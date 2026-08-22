@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/playwright:v1.49.1-noble
 
 WORKDIR /app
 
-RUN npm install --global pnpm@11.22.0 \
+RUN npm install --global @pnpm/exe@11.22.0 \
     && pnpm --version
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
